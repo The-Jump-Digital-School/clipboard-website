@@ -51,8 +51,8 @@
 	<meta property="twitter:description" content="Clipboard Mock App">
 	<meta property="twitter:image" content="">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" href="/style.css" />
 </head>
@@ -60,7 +60,7 @@
 <body>
 	<header>
 		<h1>Clipboard</h1>
-		<!-- <img src="assets/logo.svg" alt="clipboard logo" /> -->
+		<!-- <h1><img src="assets/logo.svg" alt="clipboard logo" /></h1> -->
 		<h2>A history of everything you copy</h2>
 
 		<p>
@@ -89,7 +89,7 @@
 				<img src="assets/image-computer.png" alt="Computer running Clipboard" />
 			</picture>
 
-			<ul>
+			<ul class="feature">
 				<li>
 					<h4>Quick Search</h4>
 					<p>
@@ -111,7 +111,7 @@
 			</ul>
 		</section>
 
-		<section>
+		<section class="clip-anywhere">
 			<h3>Access Clipboard Anywhere</h3>
 			<p>
 				Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few
@@ -123,6 +123,36 @@
 				<img src="assets/image-devices.png" />
 			</picture>
 		</section>
+
+		<section class="supercharge-workflow">
+			<header>
+				<h3>Supercharge your workflow</h3>
+				<p>
+					We’ve got the tools to boost your productivity.
+				</p>
+			</header>
+
+			<ul class="feature">
+				<li class="blacklist">
+					<h4>Create blacklists</h4>
+					<p>
+						Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+					</p>
+				</li>
+				<li class="snippets">
+					<h4>Plan text Snippets</h4>
+					<p>
+						Remove unwanted formatting from copied text for a consistent look.
+					</p>
+				</li>
+				<li class="preview">
+					<h4>Sneak Preview</h4>
+					<p>
+						Quick preview of all snippets on your Clipboard for easy access.
+					</p>
+				</li>
+			</ul>
+		</section>
 	</main>
 	<aside>
 		<h2>Clipboard for iOS and Mac OS</h2>
@@ -131,8 +161,8 @@
 			and you’re ready to start adding to your clipboard.
 		</p>
 		<div class="cta-btns">
-			<a href="#" download>Download for iOS</a>
-			<a href="#" download>Download for Mac</a>
+			<a class="ios" href="#" download>Download for iOS</a>
+			<a class="mac" href="#" download>Download for Mac</a>
 		</div>
 	</aside>
 	<footer>

@@ -1,0 +1,24 @@
+@mixin bg-url($url) {
+  background-image: url($url);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  @include bg-url("assets/...");
+}
+
+@mixin icon-header($url, $width, $height) {
+  background: url($url);
+  width: #{$width}px;
+  height: $height;
+
+  display: block;
+  margin: 40px auto;
+  content: "";
+}
+
+.feature .snippets h4::before {
+  @include icon-header("assets/icons/icon-text.svg", 36, 32);
+}
