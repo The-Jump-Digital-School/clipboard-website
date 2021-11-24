@@ -54,9 +54,8 @@ body {
   text-align: center;
 
   padding: 0;
-  margin: 0;
-  /* margin: 30px; */
-
+  /* margin: 0; */
+  margin: 30px;
   /* letter-spacing: 0.12px; */
 }
 
@@ -103,7 +102,7 @@ header {
   margin: 0 0 5.625em; /* 90px/16px */
 }
 
-body > header {
+/* body > header {
   padding: 30px 30px 0;
 }
 
@@ -115,7 +114,7 @@ main + aside {
 footer {
   background: #f5f7f7;
   padding: 30px;
-}
+} */
 
 footer h2 {
   padding-top: 55px;
@@ -155,7 +154,7 @@ aside {
   background: var(--button);
 
   text-align: center;
-  padding: 1em 1.5em;
+  padding: 1em 1.75em;
 
   font-weight: bold;
   border-radius: 28px;
