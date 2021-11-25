@@ -1,27 +1,27 @@
 @font-face {
   font-family: "BaiJam";
-  src: url("assets/Bai_Jamjuree/BaiJamjuree-Regular.ttf");
+  src: url("/assets/Bai_Jamjuree/BaiJamjuree-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "BaiJam";
-  src: url("assets/Bai_Jamjuree/BaiJamjuree-Italic.ttf");
+  src: url("/assets/Bai_Jamjuree/BaiJamjuree-Italic.ttf");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "BaiJam";
-  src: url("assets/Bai_Jamjuree/BaiJamjuree-Bold.ttf");
+  src: url("/assets/Bai_Jamjuree/BaiJamjuree-Bold.ttf");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "BaiJam";
-  src: url("assets/Bai_Jamjuree/BaiJamjuree-BoldItalic.ttf");
+  src: url("/assets/Bai_Jamjuree/BaiJamjuree-BoldItalic.ttf");
   font-weight: bold;
   font-style: italic;
 }
@@ -29,7 +29,7 @@
 :root {
   --light: #fff;
   --button: #26bba4;
-  --heading: #4c545c;
+  --dark-text: #4c545c;
   --text: #9eabb2;
 }
 
@@ -54,9 +54,8 @@ body {
   text-align: center;
 
   padding: 0;
-  /* margin: 0; */
-  margin: 30px;
-  /* letter-spacing: 0.12px; */
+  margin: 0;
+  letter-spacing: 0.12px;
 }
 
 h1,
@@ -65,14 +64,14 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading);
+  color: var(--dark-text);
   margin: 1.25em 0 0;
   /* font-style: italic; */
 }
 
 h2 {
   font-size: 2em;
-  /* letter-spacing: -0.521739px; */
+  letter-spacing: -0.521739px;
 }
 
 h3 {
@@ -85,7 +84,7 @@ h4 {
 
 header h1,
 footer h2 {
-  background-image: url("assets/logo.svg");
+  background-image: url("/assets/logo.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -102,7 +101,7 @@ header {
   margin: 0 0 5.625em; /* 90px/16px */
 }
 
-/* body > header {
+body > header {
   padding: 30px 30px 0;
 }
 
@@ -113,12 +112,12 @@ main + aside {
 
 footer {
   background: #f5f7f7;
-  padding: 30px;
-} */
+  padding: 52px 30px 30px;
+}
 
 footer h2 {
   padding-top: 55px;
-  margin: 0 0 1.125em;
+  margin: 0 0 1.25em;
 }
 
 p {
@@ -127,7 +126,7 @@ p {
 }
 
 a {
-  color: inherit;
+  color: var(--dark-text);
   text-decoration: none;
 }
 
@@ -144,6 +143,15 @@ aside {
   margin: 160px 0;
 }
 
+nav {
+  margin: 40px 0 50px;
+}
+
+nav a {
+  display: block;
+  margin: 20px auto;
+}
+
 .cta-btns {
   margin: 45px 0;
 }
@@ -154,12 +162,12 @@ aside {
   background: var(--button);
 
   text-align: center;
-  padding: 1em 1.75em;
+  padding: 1em 2em;
 
   font-weight: bold;
   border-radius: 28px;
 
-  margin: 1em auto;
+  margin: 1em;
 
   box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
 }
@@ -180,7 +188,7 @@ aside {
 .keep-track img,
 .clip-anywhere img {
   display: block;
-  margin: 60px 0;
+  margin: 60px auto;
 }
 
 ul.feature {
@@ -196,19 +204,50 @@ ul.feature {
 }
 
 .feature .blacklist h4::before {
-  background: url("assets/icons/icon-blacklist.svg");
+  background: url("/assets/icons/icon-blacklist.svg");
   width: 44px;
   height: 40px;
 }
 
 .feature .snippets h4::before {
-  background: url("assets/icons/icon-text.svg");
+  background: url("/assets/icons/icon-text.svg");
   width: 36px;
   height: 32px;
 }
 
 .feature .preview h4::before {
-  background: url("assets/icons/icon-preview.svg");
+  background: url("/assets/icons/icon-preview.svg");
   width: 50px;
   height: 32px;
+}
+
+.partners h2 {
+  display: none;
+}
+
+.partners li {
+  margin: 56px auto;
+}
+
+address a {
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  padding-top: 24px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: contain; <-- makes the twitter one too large */
+}
+
+a.facebook {
+  background-image: url("/assets/icons/icon-facebook.svg");
+}
+
+a.twitter {
+  background-image: url("/assets/icons/icon-twitter.svg");
+}
+
+a.instagram {
+  background-image: url("/assets/icons/icon-instagram.svg");
 }

@@ -54,61 +54,71 @@
 	<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> -->
-	<link rel="stylesheet" href="/style.css" />
+
+	<link rel="stylesheet" href="/styles/style.css" />
+	<link rel="stylesheet" media="screen and (min-width:720px)" href="/styles/tablet.css" />
+	<link rel="stylesheet" media="screen and (min-width:906px)" href="/styles/desktop.css" />
 </head>
 
 <body>
 	<header>
-		<h1>Clipboard</h1>
-		<!-- <h1><img src="assets/logo.svg" alt="clipboard logo" /></h1> -->
-		<h2>A history of everything you copy</h2>
+		<div class="wrapper">
+			<h1>Clipboard</h1>
+			<!-- <h1><img src="assets/logo.svg" alt="clipboard logo" /></h1> -->
+			<h2>A history of everything you copy</h2>
 
-		<p>
-			Clipboard allows you to track and organize everything you copy. Instantly access
-			your clipboard on all your devices.
-		</p>
+			<p>
+				Clipboard allows you to track and organize everything you copy. Instantly access
+				your clipboard on all your devices.
+			</p>
 
-		<div class="cta-btns">
-			<a href="#" class="ios" download>Download for iOS</a>
-			<a href="#" class="mac" download>Download for Mac</a>
+			<div class="cta-btns">
+				<a href="#" class="ios" download>Download for iOS</a>
+				<a href="#" class="mac" download>Download for Mac</a>
+			</div>
 		</div>
 	</header>
 	<main>
 		<section class="keep-track">
 			<header>
-				<h3>Keep track of your snippets</h3>
-				<p>
-					Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets
-					immediately on all your devices. Our Mac and iOS apps will help you organize everything.
-				</p>
+				<div class="wrapper">
+					<h3>Keep track of your snippets</h3>
+					<p>
+						Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets
+						immediately on all your devices. Our Mac and iOS apps will help you organize everything.
+					</p>
+				</div>
 			</header>
-			<picture>
-				<source media="(max-width: 600px)" srcset="assets/image-computer-480w.png" />
-				<source media="(min-width: 601px)" srcset="assets/image-computer.png" />
 
-				<img src="assets/image-computer.png" alt="Computer running Clipboard" />
-			</picture>
+			<div class="content">
+				<picture>
+					<source media="(max-width: 600px)" srcset="assets/image-computer-480w.png" />
+					<source media="(min-width: 601px)" srcset="assets/image-computer.png" />
 
-			<ul class="feature">
-				<li>
-					<h4>Quick Search</h4>
-					<p>
-						Easily search your snippets by content, category, web address, application, and more.
-					</p>
-				</li>
-				<li>
-					<h4>iCloud Sync</h4>
-					<p>
-						Instantly saves and syncs snippets across all your devices.
-					</p>
-				</li>
-				<li>
-					<h4>Complete History</h4>
-					<p>
-						Retrieve any snippets from the first moment you started using the app.
-					</p>
-				</li>
-			</ul>
+					<img src="assets/image-computer.png" alt="Computer running Clipboard" />
+				</picture>
+
+				<ul class="feature">
+					<li>
+						<h4>Quick Search</h4>
+						<p>
+							Easily search your snippets by content, category, web address, application, and more.
+						</p>
+					</li>
+					<li>
+						<h4>iCloud Sync</h4>
+						<p>
+							Instantly saves and syncs snippets across all your devices.
+						</p>
+					</li>
+					<li>
+						<h4>Complete History</h4>
+						<p>
+							Retrieve any snippets from the first moment you started using the app.
+						</p>
+					</li>
+				</ul>
+			</div>
 		</section>
 
 		<section class="clip-anywhere">
@@ -153,6 +163,19 @@
 				</li>
 			</ul>
 		</section>
+
+		<section class="partners">
+			<h2>Company Partners</h2>
+
+			<!-- Do we want these as images? Would plain-text and bg-images be better? -->
+			<ul class="feature">
+				<li><img src="/assets/partners/logo-google.png" alt="Google Logo"></li>
+				<li><img src="/assets/partners/logo-ibm.png" alt="IBM Logo"></li>
+				<li><img src="/assets/partners/logo-microsoft.png" alt="Microsoft Logo"></li>
+				<li><img src="/assets/partners/logo-hp.png" alt="Hewlett Packard Logo"></li>
+				<li><img src="/assets/partners/logo-vector-graphics.png" alt="Vector Graphics Logo"></li>
+			</ul>
+		</section>
 	</main>
 	<aside>
 		<h2>Clipboard for iOS and Mac OS</h2>
@@ -177,9 +200,14 @@
 		</nav>
 
 		<address>
-			<a href="#">Facebook</a>
-			<a href="#">Twitter</a>
-			<a href="#">Instagram</a>
+			<!--
+				What about hover state? What is the best way to do this?
+				Can we use <i> and <svg>/<img> instead and change colour on hover??
+					Maybe wrap text is a <span> and set display:none?
+			-->
+			<a class="facebook" href="#" rel="nofollow">Facebook</a>
+			<a class="twitter" href="#" rel="nofollow">Twitter</a>
+			<a class="instagram" href="#" rel="nofollow">Instagram</a>
 		</address>
 	</footer>
 </body>
