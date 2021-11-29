@@ -7,11 +7,16 @@ h3 {
 }
 
 body > header p {
-  font-size: 1.25em; /* -> 20px / 16px */
+  font-size: 1.25em !important; /* -> 20px / 16px */
 }
 
-.keep-track header p {
-  font-size: 1.125em;
+section header p {
+  font-size: 1.125em; /* 18px / 16px */
+}
+
+.large-wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 .keep-track .content {
@@ -23,7 +28,7 @@ body > header p {
 
 .keep-track ul {
   text-align: left;
-  min-width: 250px;
+  min-width: 350px;
   margin-left: 80px;
 }
 
@@ -47,4 +52,46 @@ body > header p {
   flex-grow: 0;
   flex-shrink: 0;
   margin: 1em 0.5em;
+}
+
+.supercharge-workflow .feature p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partners .feature {
+  flex-direction: row;
+}
+
+footer {
+  height: 300px;
+  text-align: left;
+}
+
+footer h2 {
+  margin-right: 50px;
+}
+
+footer .large-wrapper {
+  display: flex;
+}
+
+footer .navigation {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+footer nav {
+  margin: 0;
+  padding-right: 30px;
+  max-width: 600px;
+}
+
+footer nav a {
+  display: block;
+  float: left;
+  margin-top: 0;
+  width: 160px;
 }

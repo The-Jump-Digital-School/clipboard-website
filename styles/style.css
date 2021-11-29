@@ -199,7 +199,6 @@ ul.feature {
 .feature h4::before {
   display: block;
 
-  margin: 56px auto 40px;
   content: "";
 }
 
@@ -207,18 +206,28 @@ ul.feature {
   background: url("/assets/icons/icon-blacklist.svg");
   width: 44px;
   height: 40px;
+  margin: 56px auto 40px;
 }
 
 .feature .snippets h4::before {
   background: url("/assets/icons/icon-text.svg");
   width: 36px;
   height: 32px;
+  margin: 60px auto 44px;
 }
 
 .feature .preview h4::before {
   background: url("/assets/icons/icon-preview.svg");
   width: 50px;
   height: 32px;
+  margin: 60px auto 44px;
+}
+
+.partners .feature {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .partners h2 {
@@ -226,28 +235,37 @@ ul.feature {
 }
 
 .partners li {
-  margin: 56px auto;
+  margin: 56px 45px;
 }
 
-address a {
-  display: inline-block;
+footer address {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 144px;
+  margin: 0 auto;
+}
+
+footer address a {
+  display: block;
   height: 0;
   overflow: hidden;
   padding-top: 24px;
+  height: 24px;
 
   background-repeat: no-repeat;
   background-position: center;
   /* background-size: contain; <-- makes the twitter one too large */
 }
 
-a.facebook {
+footer address a.facebook {
   background-image: url("/assets/icons/icon-facebook.svg");
 }
 
-a.twitter {
+footer address a.twitter {
   background-image: url("/assets/icons/icon-twitter.svg");
 }
 
-a.instagram {
+footer address a.instagram {
   background-image: url("/assets/icons/icon-instagram.svg");
 }
